@@ -4,6 +4,7 @@
 	text-decoration: none;
 	list-style: none;
 	box-sizing: border-box;
+	font-size: 15px;
 }
 body{
 	overflow-x: hidden;
@@ -137,7 +138,9 @@ text-transform: uppercase;}
 .ctp{
 	font-size: 25px!important;
 }
-
+.ser{
+	margin-top: 8vh !important;
+}
 
 }
 /* ipad */
@@ -253,6 +256,14 @@ font-size: 20px!important;
 font-size: 16px;
 margin: 0 10px;
 
+}
+
+.lala{
+	align-items: center!important;
+}
+
+.lala div:nth-child(2){
+	transform: translateX(-80px)		;
 }
 
 }
@@ -549,8 +560,8 @@ border: 1px solid #656565
 .marquee-wrap {
 	position: relative;
 	display: block;
-	overflow: hidden;
-	width: 100%;
+	/* overflow: hidden; */
+	width: 100vw;
 	margin: 3vh 0
 }
 
@@ -606,14 +617,31 @@ border: 1px solid #656565
 	:root {
 		--scroller-size: 200vw;
 	}
+	.s8{
+		overflow: hidden;
+	}
 }
 
-.s8{
-	overflow: hidden;
+
+.la{
+	height: 100%;
+	 transform: translateX(-35%);
 }
 
 .s8 p {
 width: 450px;
 	font-size: 30px;
 	/* margin-left: 30vh; */
+}
+
+@media only screen and (min-width: 1440px) {
+	.loco{ 
+		transform: translateX(-15%);}
+		.loco2{
+			width: 1920px!important;
+			transform: translateX(-13%);}
+}
+
+.ser{
+	margin-top:25vh
 }
