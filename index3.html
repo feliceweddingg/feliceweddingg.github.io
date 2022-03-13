@@ -102,12 +102,12 @@
             </div>
          </div>
          <div class="s3 row justify-content-between align-items-center mt-5" style="margin-bottom:10vh " >
-            <div class="col-3 img-fluid dis0" data-scroll data-scroll-speed="2" data-scroll-delay="0.2" ><img  src="pic/h3.png"></div>
+            <div class="col-3 img-fluid dis0 pl-0 ml-0" data-scroll data-scroll-speed="2" data-scroll-delay="0.2" ><img  src="pic/h3.png"></div>
             <div class="col-5 s3i img-fluid d-flex align-items-center">
                <img  src="pic/h4.png" data-scroll data-scroll-speed="1" data-scroll-delay="0.1" >
-               <img  src="pic/h5.png"  style="height: 100%; transform: translateX(-35%);">
+               <img  src="pic/h5.png"  style="height: 100%; transform: translateX(-25%);">
             </div>
-            <div class="col-2 img-fluid dis0" data-scroll data-scroll-speed="2" data-scroll-delay="0.3" ><img  src="pic/h6.png"></div>
+            <div class="col-2  dis0 mr-5 pr-5 " data-scroll data-scroll-speed="2" data-scroll-delay="0.3" ><img   src="pic/h6.png"></div>
          </div>
          <div class="s4 " style="margin-bottom:10vh " data-scroll data-scroll-speed="2" data-scroll-delay="0" >
             <div class="sf text-center mb-3" style="color: #656565">Ở đây có</div>
@@ -260,7 +260,7 @@
             </div>
          </div>            
       </div>
-      <div class="s8 loco row" style="padding-top: 8vh;"  >
+      <div class="s8 loco " style="padding-top: 8vh;"  >
          <section id="section5" >
             <hr class="mainhr">
             <ul class="marquee-wrap sauda" style="font-size: 100px;">
@@ -381,26 +381,26 @@
 <!-- 
 
          <div data-scroll-container class="container"> -->
-      <div class="footer2 loco2 mt-5 pt-4" style="background-color: #12141C">
+      <div class="footer2 loco2 mt-5 pt-4 bgd">
          <div class="main px-4 px-xl-5 text-white">
             <div class="row py-3 px-xl-0 px-3 py-md-">
-               <div class="col-md-5 col-12  mr-auto  d-flex d-md-block flex-column align-items-center">
+               <div class="col-lg-5 col-sm-3 col-12  mr-auto  d-flex d-md-block flex-column align-items-center">
                   <img src="logo.png" class="m-auto">
                   <div class="sf mt-3"> Wedding Planner & Studio</div>
                </div>
-               <div class="col-md-4 col-12 text-center text-md-left mt-3 mt-md-0 sf" style="line-height: 200%;">
+               <div class="col-sm-5 col-lg-4  col-12 text-center text-md-left mt-3 mt-md-0 sf" style="line-height: 200%;">
                   78/10 Nguyễn Kiệm, Phú Nhuận, TPHCM <br>
                   18006325 <br>
                   felice@gmail.com <br>
                   8:00 - 21:00, Thứ Hai đến Chủ Nhật
                </div>
-               <div class="col-2 sfre dis0 mt-5 mt-md-0" style="line-height: 110%;">
+               <div class="col-sm-2 col-3 sfre dish mt-5 mt-md-0" style="line-height: 110%;">
                   <p><span  class="link link--metis ">Trang chủ</span></p>
                   <p><span  class="link link--metis">Giới thiệu</span></p>
                   <p><span  class="link link--metis">Dịch vụ</span></p>
                   <p><span  class="link link--metis mb-1">Blog</span></p>
                </div>
-               <div class="col-1 sf  dis0" style="line-height: 110%;">
+               <div class="col-1 sf  dish" style="line-height: 110%;">
                   <p><span  class="link link--metis ">Album</span></p>
                   <p><span  class="link link--metis">Video</span></p>
                   <p><span  class="link link--metis">Liên hệ</span></p>
@@ -410,13 +410,13 @@
          <hr class="mainhr mt-0">
          <div class=" main px-4 px-xl-5 sf text-white px-xl-0 px-3">
             <div class=" d-flex justify-content-between p-0 p-md-1">
-               <p class="dis0">FeliceStudio@2022</p>
+               <p class="dish">FeliceStudio@2022</p>
                <div class="d-flex m-auto">
                   <p><span  class="link link--metis "></span> Facebook</p>
                   <p><span  class="link link--metis mx-md-5 mx-4">Youtube</span></p>
                   <p><span  class="link link--metis ">Instagram</span></p>
                </div>
-               <p class="dis0">All right reserved</p>
+               <p class="dish">All right reserved</p>
             </div>
          </div>
       </div>
@@ -427,6 +427,9 @@
       
 
 
+
+         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
 
 
@@ -442,58 +445,4 @@
 
 
 
-
-
-
-
-
-   
-
-   <!-- mouse -->
-   <script>
-      var cursor = $(".cursor"),
-          follower = $(".cursor-follower");
-      
-      var posX = 0,
-          posY = 0,
-          mouseX = 0,
-          mouseY = 0;
-      
-      TweenMax.to({}, 0.016, {
-          repeat: -1,
-          onRepeat: function() {
-              posX += (mouseX - posX) / 9;
-              posY += (mouseY - posY) / 9;
-      
-              TweenMax.set(follower, {
-                  css: {
-                      left: posX - 20,
-                      top: posY - 20
-                  }
-              });
-      
-              TweenMax.set(cursor, {
-                  css: {
-                      left: mouseX,
-                      top: mouseY
-                  }
-              });
-          }
-      });
-      
-      $(document).on("mousemove", function(e) {
-          mouseX = e.pageX;
-          mouseY = e.pageY;
-      });
-      
-      $(".portfolio-item img").on("mouseenter", function() {
-          cursor.addClass("active");
-          follower.addClass("active");
-      });
-      
-      $(".portfolio-item img").on("mouseleave", function() {
-          cursor.removeClass("active");
-          follower.removeClass("active");
-      });
-   </script>
 </html>

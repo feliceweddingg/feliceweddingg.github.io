@@ -634,14 +634,26 @@ width: 450px;
 	/* margin-left: 30vh; */
 }
 
+
+
 @media only screen and (min-width: 1440px) {
 	.loco{ 
-		transform: translateX(-15%);}
+			width: 1920px!important;
+			margin: 0 !important;
+			transform: translateX(-12%);
+		}
 		.loco2{
 			width: 1920px!important;
-			transform: translateX(-13%);}
+			margin: auto 0 !important;
+			padding: auto 0 !important;
+			transform: translateX(-13%);
+		}
 }
 
 .ser{
 	margin-top:25vh
+}
+
+.s3 .col-2{
+	padding-right: 0!important;
 }
