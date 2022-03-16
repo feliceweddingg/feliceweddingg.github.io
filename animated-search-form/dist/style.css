@@ -1,9 +1,55 @@
 
+#wrap2 {
+  position: relative;
+}
+
+#wrap2 input[type="text"] {
+  height: 30px;
+  font-size: 15px;
+  display: inline-block;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  padding: 3px;
+  padding-right: 60px;
+  width: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  z-index: 3;
+  transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+  cursor: pointer;
+}
+
+
+#wrap2 input[type="text"]:focus {
+  width: 250px;
+  z-index: 1;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  cursor: text;
+}
+#wrap2 input[type="submit"] {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  color: transparent !important;;
+
+  background: url("/pic/Search1.png") center center no-repeat;
+  /* text-indent: -10000px; */
+  border: none;
+
+  transition: opacity .4s ease;
+}
+
+
+
+
 #wrap {
   position: relative;
 }
 
-input[type="text"] {
+#wrap input[type="text"] {
   height: 30px;
   font-size: 15px;
   display: inline-block;
@@ -23,13 +69,13 @@ input[type="text"] {
 }
 
 
-input[type="text"]:focus {
+#wrap input[type="text"]:focus {
   width: 250px;
   z-index: 1;
   border-bottom: 1px solid rgb(109, 109, 109);
   cursor: text;
 }
-input[type="submit"] {
+#wrap input[type="submit"] {
   height: 30px;
   width: 30px;
   display: inline-block;

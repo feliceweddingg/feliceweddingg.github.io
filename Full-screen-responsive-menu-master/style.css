@@ -3,9 +3,19 @@
   width: 100vw;
   height: 100vh;
 }
-.logo{
-  z-index: 100;
+.logo,.as{
+  z-index: 100000;
 }
+
+.hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+ 
+}
+
 .menu .row:nth-child(2){
   position: absolute;
   bottom: 10px;
@@ -31,7 +41,7 @@
   background: none;
   border: 0;
   cursor: pointer;
-  z-index: 999;
+  z-index: 100000;
   overflow: hidden;
 }
 .hamburger__line {
@@ -90,6 +100,6 @@
 }
 .navigation.active {
   opacity: 1;
-  z-index: 10;
+  z-index: 1000;
 }
 

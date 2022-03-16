@@ -4,7 +4,9 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
+      <link rel="icon" href="icon.png" type="image/x-icon">
+      <meta property="og:description" content="Felice Wedding Planner & Studio"/>
+      <title>Felice - BLOG</title>
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="bootstrap.min.css">
       <script src="https://kit.fontawesome.com/cb8f931045.js" crossorigin="anonymous"></script>
@@ -13,13 +15,16 @@
       <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css'><link rel="stylesheet" href="locomotive-scroll-tutorial/locomotive-scroll-tutorial/dist/style.css">
 
 
-      
+      <!-- MENU -->
       <link rel="stylesheet" href="Full-screen-responsive-menu-master/style.css" />
-
+<!-- SEARCH -->
+      <link rel="stylesheet" href="animated-search-form/dist/style.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
    </head>
 
    <body class="bgl">
+
 
       <div class="d-flex justify-content-between main navmenu mt-4 px-3 px-lg-5" >
          <div class="masthead">
@@ -37,13 +42,13 @@
                   <div class="col-9 ml-auto col-lg-4 col-sm-6 sauda f30" style=" font-size: 65px;">
                      <p class="menulink"><span class="sf mr-4" style="font-size: 13px;"> 01 </span><a  href="index.html">Trang chủ</a></p>
                      <p class="menulink"><span class="sf mr-4" style="font-size: 13px;"> 02 </span><a  href="about.html">Giới thiệu</a></p>
-                     <p class="menulink"><span class="sf mr-4" style="font-size: 13px;"> 03 </span><a  href="service.html">Dịch vụ</a></p>
+                     <p class="menulink"><span class="sf mr-4" style="font-size: 13px;"> 03 </span><a  href="service.html" >Dịch vụ</a></p>
                      <p class="menulink"><span class="sf mr-4" style="font-size: 13px;"> 04 </span><a  href="album.html">Album</a></p>
                
                   </div>
                   <div class="col-9 ml-auto f30 col-lg-3 col-sm-4  sauda"style=" font-size: 65px;">
                      <p class="menulink"><span class="sf mr-4" style="font-size: 13px;"> 05 </span><a  href="video.html">Video</a></p>
-                     <p class="menulink"><span class="sf mr-4" style="font-size: 13px;"> 06 </span><a  href="blog.html">Blog</a></p>
+                     <p class="menulink"><span class="sf mr-4" style="font-size: 13px;color:#FF5900"> 06 </span><a  href="blog.html"STYLE="color:#FF5900" >Blog</a></p>
                      <p class="menulink"><span class="sf mr-4" style="font-size: 13px;"> 07 </span><a  href="contact.html">Liên hệ</a></p>
                    
                   </div>
@@ -70,24 +75,25 @@
          
          
           <div class="d-flex ">
-            <!-- <div class="search-box">
-               <input class="search-input" placeholder="Type something...">
-               <a class="search-btn"> <i class="fas fa-search"></i> </a>
-            </div> -->
-          <div class="search"><img src="pic/Search.png"></div>
+            <div id="wrap">
+               <form action="" autocomplete="on">
+               <input id="search"  type="text" placeholder="Tìm kiếm">
+               <input id="search_submit" type="submit">
+               </form>
+             </div>
          
           <div class="user ml-2"><img src="pic/User-Outline.png"></div>
          </div>
          
          </div>
-            <div data-scroll-container class="container" style="margin-top: 80px;">
+            <div data-scroll-container class="container" >
              
 
 
-      <div class="main px-3 px-lg-5">
+      <div class="main px-3 px-lg-5" style="margin-top:50px">
       <p class="sauda to mb-0 f60 text-center text-sm-left mb-2 mb-sm-0">BLOG</p>
       <div class="sfre f13">
-         <ul class="nav nav-tabs mb-5 navblog"  id="myTab" role="tablist">
+         <ul class="nav nav-tabs mb-sm-4 navblog"  id="myTab" role="tablist">
             <li class="nav-item "><a class="nav-link active " id="home-tab" data-toggle="tab" href="#all" role="tab" aria-controls="home" aria-selected="true"><span class="link link--metis ">Tất cả </span></a></li>
             <li class="nav-item " role="presentation"><a class="nav-link" id="idea-tab" data-toggle="tab" href="#idea" role="tab" aria-controls="profile" aria-selected="false"><span class="link link--metis ">Ý tưởng cưới</span></a></li>
             <li class="nav-item" role="presentation"><a class="nav-link" id="media-tab" data-toggle="tab" href="#media" role="tab" aria-controls="contact" aria-selected="false"><span class="link link--metis ">Truyền thông</span></a></li>
@@ -95,7 +101,7 @@
          <div class="">
             <div class="tab-content" id="myTabContent" style="font-size: 15px;">
                <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="home-tab">
-                  <div class="d-flex row  ">
+                  <div class="d-flex row  "data-scroll data-scroll-speed="2" data-scroll-delay="0.2">
                      <div class="col-md-4 col-12 mr-auto mb-3">
                         <img src="pic/b1.png" class="img-fluid imgb">
                         <p class="mt-2 mb-1 cam">wedding Ideas</p>
@@ -105,7 +111,7 @@
                      <div class="col-md-3 col-12 mb-3">
                         <img src="pic/b2.png" class="img-fluid imgb">
                         <p class="mt-2 mb-1 cam">wedding Ideas</p>
-                        <p style="line-height: 130%;">Lời cầu hôn ngọt ngào </p>
+                        <a href="blogpost.html"><p style="line-height: 130%;">Lời cầu hôn ngọt ngào </p></a> 
                      </div>
                      <div class="col-md-3 col-12 mb-3">
                         <img src="pic/b3.png" class="img-fluid imgb">
@@ -125,7 +131,7 @@
                         <p class="text-md-right text-left">Thiệp cưới – Bộ mặt của gia chủ </p>
                      </div>
                   </div>
-                  <div class="row">
+                  <div class="row"data-scroll data-scroll-speed="2" data-scroll-delay="0.2"> 
                      <div class="col-md-4 col-12 mr-auto mb-3">
                         <img src="pic/b6.png"  class="img-fluid imgb">
                         <p class="mt-2 mb-1 cam">WEDDING IDEAS</p>
@@ -134,7 +140,7 @@
                   </div>
                   <div class="d-flex row ">
                    
-                    <div class="col-md-3 col-12 mb-3 ml-auto">
+                    <div class="col-md-3 col-12 mb-3 ml-auto" >
                        <img src="pic/b7.png" class="img-fluid imgb" >
                        <p class="mt-2 mb-1 cam text-md-right text-left">THE MEDIA</p>
                        <p class="text-md-right text-left">CƯỚI MÙA DỊCH VẪN AN TOÀN </p>
@@ -145,7 +151,7 @@
                        <p class="text-md-right text-left">Private Wedding – Tại sao không? </p>
                     </div>
                  </div>
-                 <div class="row align-items-end">
+                 <div class="row align-items-end"data-scroll data-scroll-speed="2" data-scroll-delay="0.2">
                   <div class="col-md-5 mr-auto mb-3">
                      <img src="pic/b9.png"class="img-fluid imgb">
                      <p class="mt-2 mb-1 cam ">THE MEDIA</p>
@@ -227,7 +233,7 @@
             </div>
          </div>
       </div>
-      <div class="ct my-5">
+      <div class="ct my-5" >
          <img src="pic/ct.png" class="img-fluid" >
          <div class="ctt">
             <p class="sauda f25" style="font-size: 60px;">Hãy để chúng tôi đồng hành cùng đám cưới trong mơ của
@@ -238,46 +244,48 @@
       </div> 
       </div>
       </div>
-      <div class="footer2 loco2 mt-5 pt-4 bgd" style="padding-bottom: 140px;">
-         <div class="main px-4 px-xl-5 text-white">
-            <div class="row py-3 px-xl-0 px-3 py-md-">
-               <div class="col-lg-5 col-sm-3 col-12  mr-auto  d-flex d-md-block flex-column align-items-center">
-                  <img src="logo.png" class="m-auto">
-                  <div class="sf mt-3"> Wedding Planner & Studio</div>
-               </div>
-               <div class="col-sm-5 col-lg-4  col-12 text-center text-md-left mt-3 mt-md-0 sf" style="line-height: 200%;">
-                  78/10 Nguyễn Kiệm, Phú Nhuận, TPHCM <br>
-                  18006325 <br>
-                  felice@gmail.com <br>
-                  8:00 - 21:00, Thứ Hai đến Chủ Nhật
-               </div>
-               <div class="col-sm-2 col-3 sfre dish mt-5 mt-md-0" style="line-height: 110%;">
-                  <p><span  class="link link--metis ">Trang chủ</span></p>
-                  <p><span  class="link link--metis">Giới thiệu</span></p>
-                  <p><span  class="link link--metis">Dịch vụ</span></p>
-                  <p><span  class="link link--metis mb-1 activepage" style="color:#FF5900">Blog</span></p>
-               </div>
-               <div class="col-1 sf  dish" style="line-height: 110%;">
-                  <p><span  class="link link--metis ">Album</span></p>
-                  <p><span  class="link link--metis">Video</span></p>
-                  <p><span  class="link link--metis">Liên hệ</span></p>
-               </div>
+
+
+   <div class="footer2 loco2 mt-5 pt-4 bgd" style="padding-bottom: 100px;">
+      <div class="main px-4 px-xl-5 text-white">
+         <div class="row py-3 px-xl-0 px-3 py-md-">
+            <div class="col-lg-5 col-sm-3 col-12  mr-auto  d-flex d-md-block flex-column align-items-center">
+               <img src="logo.png" class="m-auto">
+               <div class="sf mt-3"> Wedding Planner & Studio</div>
             </div>
-         </div>
-         <hr class="mainhr mt-0">
-         <div class=" main px-4 px-xl-5 sf text-white px-xl-0 px-3 ">
-            <div class=" d-flex justify-content-between p-0 p-md-1">
-               <p class="dish">FeliceStudio@2022</p>
-               <div class="d-flex m-auto">
-                  <p><span  class="link link--metis "></span> Facebook</p>
-                  <p><span  class="link link--metis mx-md-5 mx-4">Youtube</span></p>
-                  <p><span  class="link link--metis ">Instagram</span></p>
-               </div>
-               <p class="dish">All right reserved</p>
+            <div class="col-sm-5 col-lg-4  col-12 text-center text-md-left mt-3 mt-md-0 sf" style="line-height: 200%;">
+               78/10 Nguyễn Kiệm, Phú Nhuận, TPHCM <br>
+               18006325 <br>
+               felice@gmail.com <br>
+               8:00 - 21:00, Thứ Hai đến Chủ Nhật
+            </div>
+            <div class="col-sm-2 col-3 sfre dish mt-5 mt-md-0" style="line-height: 110%;">
+               <p><span  class="link link--metis ">Trang chủ</span></p>
+               <p><span  class="link link--metis">Giới thiệu</span></p>
+               <p><span  class="link link--metis ">Dịch vụ</span></p>
+               <p><span  class="link link--metis mb-1 activepage"style="color:#FF5900" >Blog</span></p>
+            </div>
+            <div class="col-1 sf  dish" style="line-height: 110%;">
+               <p><span  class="link link--metis ">Album</span></p>
+               <p><span  class="link link--metis">Video</span></p>
+               <p><span  class="link link--metis">Liên hệ</span></p>
             </div>
          </div>
       </div>
-
+      <hr class="mainhr mt-0">
+      <div class=" main px-4 px-xl-5 sf text-white px-xl-0 px-3 ">
+         <div class=" d-flex justify-content-between p-0 p-md-1">
+            <p class="dish">FeliceStudio@2022</p>
+            <div class="d-flex m-auto">
+               <p><span  class="link link--metis "></span> Facebook</p>
+               <p><span  class="link link--metis mx-md-5 mx-4">Youtube</span></p>
+               <p><span  class="link link--metis ">Instagram</span></p>
+            </div>
+            <p class="dish">All right reserved</p>
+         </div>
+      </div>
+   </div>
+</div>
 
    </div>
 
@@ -297,6 +305,10 @@
 
       <!-- Menu -->
       <script src="Full-screen-responsive-menu-master/main.js"></script>
+
+      <!-- sEARCH  -->
+   <script  src="animated-search-form/dist/script.js"></script>
+
 
    </body>
 </html>
