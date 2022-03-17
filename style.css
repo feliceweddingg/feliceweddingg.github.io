@@ -766,7 +766,7 @@ transition: all 0.5s ease-in-out;
 
 .images {
 	position: absolute;
-	top: 50%;
+	top: 46%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	display: flex;
@@ -838,7 +838,7 @@ transition: all 0.5s ease-in-out;
 
 .overlay .navbar {
 	position: absolute;
-	bottom: 17vh;
+	bottom: 19vh;
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
@@ -920,3 +920,6 @@ opacity: 1;
     -webkit-transform-origin: bottom;
   }
 }
+
+
+
