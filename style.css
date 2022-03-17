@@ -742,3 +742,181 @@ transition: all 0.5s ease-in-out;
 	cursor: pointer;
 	;
 }
+
+
+
+
+
+
+
+
+
+
+/* page reveal */
+
+.overlay {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-color: #071714;
+	/* chỉnh để luôn nằm trên cùng */
+	z-index: 10000011;
+	/* cursor: none; */
+}
+
+.images {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+}
+
+.img {
+	width: 160px;
+	height: 200px;
+	opacity: 0.8;
+}
+
+.img-1 {
+	transform: scale(1);
+	background: url("https://images.unsplash.com/photo-1591700331354-f7eea65d1ce8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-2 {
+	transform: scale(1.4);
+	background: url("https://images.unsplash.com/photo-1606216794050-6ff7db8cb43d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80") 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-3 {
+	transform: scale(1.2);
+	background: url("https://images.unsplash.com/photo-1607190074257-dd4b7af0309f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80")50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-4 {
+	transform: scale(0.9);
+	background: url("https://images.unsplash.com/photo-1544592732-83bbbfc46783?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80") 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-5 {
+	transform: scale(1.2);
+	background: url("https://images.unsplash.com/photo-1542415719-96b33a38d73d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-6 {
+	transform: scale(1);
+	background: url("https://images.unsplash.com/photo-1631133961299-4bbfedcac74e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80") 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-7 {
+	transform: scale(1.1);
+	background: url("https://images.unsplash.com/photo-1606216794074-735e91aa2c92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80") 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.img-8 {
+	transform: scale(0.9);
+	background: url("https://images.unsplash.com/photo-1565038930214-09566ed2149b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") 50% 50% no-repeat;
+	background-size: cover;
+}
+.img-9 {
+	transform: scale(1.1);
+	background: url("https://i.pinimg.com/564x/8b/6a/ca/8b6aca2af395ad60d0aa620bfdfd98b7.jpg") 50% 50% no-repeat;
+	background-size: cover;
+}
+.img-10 {
+	transform: scale(1.2);
+	background: url("https://i.pinimg.com/564x/38/37/7f/38377fb35b2b9802f7fda7d4f3d4e2a7.jpg") 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.overlay .navbar {
+	position: absolute;
+	bottom: 17vh;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+
+	
+}
+
+
+/*mouse move*/
+.cursor {
+    position: absolute;
+    background: #f93700;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    z-index: 100000000;
+    transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+        0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+    user-select: none;
+    pointer-events: none;
+    transform: scale(1);
+}
+
+
+
+.cursor.active {
+    opacity: 1;
+    transform: scale(12);
+}
+.cursor.active::before {
+    opacity: 1;
+}
+.cursor-follower {
+    position: absolute;
+    border: 1px solid rgba(249,55,0,1.00);
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    z-index: 100000000;
+    transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+        0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+    user-select: none;
+    pointer-events: none;
+    transform: translate(8px, 4px);
+}
+
+.cursor-follower.active {
+    opacity: 0.3;
+    transform: scale(0);
+}
+
+
+
+
+
+.hover-img{
+	position: relative;
+	overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.3, 1);
+	
+} 
+.hover-img img{
+opacity: 1;
+/* filter: grayscale(1); */
+} 
+
+.hover-img:hover img {
+    -webkit-animation: kenburns-bottom 1s ease-out both;
+/* filter: grayscale(1); */
+opacity: 1;
+}
+@keyframes kenburns-bottom {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 84%;
+  }
+  100% {
+    -webkit-transform: scale(1.1) translateY(10px);
+    -webkit-transform-origin: bottom;
+  }
+}
