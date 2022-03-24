@@ -210,6 +210,16 @@ text-transform: uppercase;}
 .ct .sauda{
 	font-size: 40px!important;
 }
+.a1{
+	transform: translateX(0)!important;
+	/* text-align: center; */
+	margin-top: 40px;
+}
+
+
+
+
+
 }
 
 
@@ -332,7 +342,11 @@ margin: 0 10px;
 height: 500px;
 object-fit: cover;
 }
-
+.a1{
+	transform: translateX(0)!important;
+	/* text-align: center; */
+	margin-top: 40px;
+}
 
 
 
@@ -923,3 +937,13 @@ opacity: 1;
 
 
 
+
+
+/* about */
+.a1{
+	font-size: 43px;
+	transform: translateX(-100px)
+}
+.qt{
+	transform: translateY(-105px);
+}
