@@ -20,7 +20,9 @@
 <!-- SEARCH -->
       <link rel="stylesheet" href="animated-search-form/dist/style.css">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-
+		<!-- accord -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+		<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
    </head>
 
    <body class="bgl">
@@ -111,52 +113,71 @@
 
       Đối với FELICE, những yêu cầu và mong muốn của khách hàng luôn được ưu tiên hàng đầu. Những gì cô dâu chú rể cần, hay thiết kế đều được FELICE đáp ứng một cách trọn vẹn nhất. Không tự nhận mình quá hoàn hảo nhưng đã hội tủ đủ yếu tố để biến mình thành một trong những đơn vị tổ chức tiệc cưới chuyên nghiệp hiện nay trong ngành dịch vụ cưới.  Chuyên nghiệp trong cách làm việc với khách hàng, thấu hiểu từ việc trở thành người bạn thân thiết với cô dâu chú rể của mình. Tạo được sự tin tưởng nhất định với đối tác và khách hàng, sáng tạo trong từng ý tưởng và thiết kế. Sự chuyên nghiệp, thấu hiểu, tin tưởng và sáng tạo là những điều mà khiến FELICE luôn hãnh diện đối với các đơn vị tổ chức tiệc cưới khác.</div>
       <div class="col-lg-4 col-12 sfbol p-0 mb-3"> Tại sao lựa chọn chúng tôi</div> 
-      <div class="col-lg-8 col-12 sf p-0>
-         <div class="accordion" id="accordionExample">
-            <div class="card">
-              <div class="card-header d-flex" id="headingOne">
-               
-                  <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Collapsible Group Item #1
-                  </button>
-                  
-                  <img src="plus.png" class=" img-fluid">
-              </div>
-          
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                  Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
-                </div>
-              </div>
+      <div class="col-lg-8 col-12 sf p-0">
+         <section id="section3">
+      
+            <div class="acc-toggle" data-collapse="">
+               <div class="acc-block">
+                  <div class="acc-no">(01)</div>
+                  <div class="acc-title">Dịch vụ đẳng cấp</div>
+                  <div class="acc-toggle-icon">
+                     <ion-icon name="add-outline"></ion-icon>
+                  </div>
+               </div>
             </div>
-            <div class="card">
-              <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Collapsible Group Item #2
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                  Some placeholder content for the second accordion panel. This panel is hidden by default.
-                </div>
-              </div>
+            <ul>
+               <li>
+                  Dịch vụ chụp ảnh cưới của Klaver Studio luôn uy tín, đặt lợi ích khách hàng lên hàng đầu
+               </li>
+               <li> chúng tôi luôn làm hài lòng mọi khách hàng dù khó tính nhất</li>
+            </ul>
+            <div class="acc-toggle" data-collapse="">
+               <div class="acc-block">
+                  <div class="acc-no">(02)</div>
+                  <div class="acc-title">Chất lượng sản phẩm tốt nhất</div>
+                  <div class="acc-toggle-icon">
+                     <ion-icon name="add-outline"></ion-icon>
+                  </div>
+               </div>
             </div>
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Collapsible Group Item #3
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
-                  And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
-                </div>
-              </div>
+            <ul>
+               <li>
+                  Với mỗi Album sau khi chụp xong cho mỗi khách hàng đều được đội ngũ kĩ thuật 
+               </li>
+               <li>của Klaver Studio design tỉ mỉ từng trang album đem đến cho khách hàng</li>
+            </ul>
+            <div class="acc-toggle" data-collapse="">
+               <div class="acc-block">
+                  <div class="acc-no">(03)</div>
+                  <div class="acc-title">Ekip chụp, trang điểm chuyên nghiệp</div>
+                  <div class="acc-toggle-icon">
+                     <ion-icon name="add-outline"></ion-icon>
+                  </div>
+               </div>
             </div>
+            <ul>
+               <li>
+                  Với đội ngũ trang điểm và chụp kinh nghiệm lâu năm,
+               </li>
+               <li>thì mỗi khách hàng của Klaver Studio sẽ trở nên đẹp và lộng lẫy nhất trong những ngày trọng đại</li>
+            </ul>
+            <div class="acc-toggle" data-collapse="">
+               <div class="acc-block">
+                  <div class="acc-no">(04)</div>
+                  <div class="acc-title">Khuyến mãi hấp dẫn</div>
+                  <div class="acc-toggle-icon">
+                     <ion-icon name="add-outline"></ion-icon>
+                  </div>
+               </div>
+            </div>
+            <ul>
+               <li>
+                  Với những khuyến mãi hấp dẫn từng thời điểm, 
+               </li>
+               <li>với nhiều gói chụp phong phú nhiều địa điểm chụp đẹp.</li>
+            </ul>
+         </section>
+       
           </div>
       </div>
 </div>
@@ -310,6 +331,44 @@
       <!-- sEARCH  -->
    <script  src="animated-search-form/dist/script.js"></script>
 
-
+   
+   		<!-- accord -->
+		<script>
+			let parent = document.querySelectorAll("[data-collapse");
+			parent.forEach((element) => {
+			  let clickTarget = element.querySelector("*");
+			  let collapseElement = element.nextElementSibling;
+			  let collapseElementChildren = collapseElement.children;
+			  let tl = new TimelineMax({
+			    reversed: true,
+			    paused: true,
+			  });
+			
+			  tl.from(
+			    collapseElement,
+			    1.6,
+			    {
+			      className: "+=heightZero",
+			      ease: Expo.easeInOut,
+			    },
+			    "open"
+			  );
+			  tl.staggerFrom(
+			    collapseElementChildren,
+			    1,
+			    {
+			      autoAlpha: 0,
+			      y: "40%",
+			      ease: Expo.easeInOut,
+			    },
+			    0.08,
+			    "open+=.1"
+			  );
+			
+			  clickTarget.addEventListener("click", () => {
+			    tl.reversed() ? tl.play() : tl.reverse();
+			  });
+			});
+		</script>
    </body>
 </html>
