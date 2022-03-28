@@ -6,7 +6,9 @@
 	box-sizing: border-box;
 	/* font-size: 15px; */
 }
-
+.nt{
+	cursor: not-allowed!important;
+}
 .footer2 a{
 	color:white
 }
