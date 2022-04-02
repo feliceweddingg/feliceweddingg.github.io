@@ -217,8 +217,13 @@ text-transform: uppercase;}
 	/* text-align: center; */
 	margin-top: 40px;
 }
-
-
+.p100{
+	font-size: 100px!important;
+}
+.p50{
+	font-size: 50px!important;
+	margin-top: 5vh;
+}
 
 
 
